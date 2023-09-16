@@ -1,0 +1,25 @@
+@import "./Fonts.scss";
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+
+  &.dark {
+    --background-color: #000;
+    --text-color: #fff;
+    --primary-color: #0088dd;
+  }
+}
+
+div#root {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
