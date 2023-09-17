@@ -12,5 +12,5 @@
     "strict": true,
     "target": "ESNext"
   },
-  "include": ["./frontend", "./backend"]
+  "include": ["./frontend", "./backend", "./types"]
 }

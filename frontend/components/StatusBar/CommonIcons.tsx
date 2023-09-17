@@ -3,10 +3,14 @@ import {
   faLinkSlash,
   faMemory,
   faMicrochip,
+  faTemperatureEmpty,
+  faTemperatureFull,
+  faTemperatureHalf,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 
+import { SocketPayloadUsage } from "../../../types";
 import { useSocket } from "../../utils";
 
 export const SocketConnection: React.FC = () => {
@@ -37,7 +41,11 @@ export const SocketConnection: React.FC = () => {
 export const Usage = () => {
   const socket = useSocket();
 
-  const [usage, setUsage] = useState<{ cpu: number; memory: number }>();
+  const [usage, setUsage] = useState<SocketPayloadUsage>({
+    temp: 0,
+    memory: 0,
+    cpu: "0.00",
+  });
 
   useEffect(() => {
     const onUsage = (value: typeof usage) => {
@@ -53,6 +61,18 @@ export const Usage = () => {
 
   return usage ? (
     <>
+      <span className="status-icon">
+        <FontAwesomeIcon
+          icon={
+            usage.temp < 40
+              ? faTemperatureEmpty
+              : usage.temp > 80
+              ? faTemperatureFull
+              : faTemperatureHalf
+          }
+        />
+        {usage?.temp}&deg;C
+      </span>
       <span className="status-icon">
         <FontAwesomeIcon icon={faMemory} />
         {usage?.memory}%

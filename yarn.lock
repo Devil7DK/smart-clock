@@ -1012,11 +1012,6 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/node-os-utils@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node-os-utils/-/node-os-utils-1.3.1.tgz#d1ea627775295f1fbf496ab4c1de75294923cafb"
-  integrity sha512-gokG1AaQo78X3f1KXOPAfwbhERX95XL0nhosOhwFck0hZ3BG52Mfch3oj3gAhXuUsou3lwi+ewZWjDo0wshKwQ==
-
 "@types/node@*", "@types/node@>=10.0.0", "@types/node@^20.6.2":
   version "20.6.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.2.tgz#a065925409f59657022e9063275cd0b9bd7e1b12"
@@ -2108,11 +2103,6 @@ node-gyp-build-optional-packages@5.0.7:
   resolved "https://registry.yarnpkg.com/node-gyp-build-optional-packages/-/node-gyp-build-optional-packages-5.0.7.tgz#5d2632bbde0ab2f6e22f1bbac2199b07244ae0b3"
   integrity sha512-YlCCc6Wffkx0kHkmam79GKvDQ6x+QZkMjFGrIMxgFNILFvGSbCp2fCBC55pGTT9gVaz8Na5CLmxt/urtzRv36w==
 
-node-os-utils@^1.3.7:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/node-os-utils/-/node-os-utils-1.3.7.tgz#77cc341ae39584e12d3aadf6046fe420ff4c9340"
-  integrity sha512-fvnX9tZbR7WfCG5BAy3yO/nCLyjVWD6MghEq0z5FDfN+ZXpLWNITBdbifxQkQ25ebr16G0N7eRWJisOcMEHG3Q==
-
 node-releases@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
@@ -2580,6 +2570,11 @@ svgo@^2.4.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+systeminformation@^5.21.5:
+  version "5.21.5"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.21.5.tgz#61956089784267f919e0a443d988ce3879f99408"
+  integrity sha512-W1bvYcSM6hVIEqFmjAWTtfX+Qq1Mc3sEZq4AxjtkNya01WbcleahsCzM2/eAey+no+XxPk6a0/7RnCLX6/BmOQ==
 
 term-size@^2.2.1:
   version "2.2.1"
