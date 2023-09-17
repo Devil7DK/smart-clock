@@ -1,4 +1,5 @@
 import {
+  faHardDrive,
   faLink,
   faLinkSlash,
   faMemory,
@@ -45,6 +46,7 @@ export const Usage = () => {
     temp: 0,
     memory: 0,
     cpu: "0.00",
+    disk: 0,
   });
 
   useEffect(() => {
@@ -61,6 +63,12 @@ export const Usage = () => {
 
   return usage ? (
     <>
+      {usage.disk && (
+        <span className="status-icon">
+          <FontAwesomeIcon icon={faHardDrive} />
+          {usage?.disk}%
+        </span>
+      )}
       <span className="status-icon">
         <FontAwesomeIcon
           icon={
