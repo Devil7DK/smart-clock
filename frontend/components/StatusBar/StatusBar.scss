@@ -6,6 +6,11 @@ div.status-bar {
 
   padding: 0.2em 0.5em;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
   > div {
     display: flex;
     flex-direction: row;
