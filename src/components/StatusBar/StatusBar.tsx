@@ -2,7 +2,7 @@ import { createPortal } from "react-dom";
 import "./StatusBar.scss";
 
 import React, { PropsWithChildren } from "react";
-import { SocketConnection } from "./SocketConnection";
+import { SocketConnection, Usage } from "./CommonIcons";
 
 export const StatusBar: React.FC<PropsWithChildren> & {
   Left: React.FC<PropsWithChildren>;
@@ -11,7 +11,9 @@ export const StatusBar: React.FC<PropsWithChildren> & {
   return (
     <>
       <div className="status-bar">
-        <div className="left"></div>
+        <div className="left">
+          <Usage />
+        </div>
         <div className="right">
           <SocketConnection />
         </div>
